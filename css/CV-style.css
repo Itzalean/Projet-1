@@ -1,0 +1,84 @@
+#FullDoc {
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: #FFF; }
+
+#corps {
+	flex: 1; /* Pour utiliser toute la place restante */
+	padding-left: 35px;
+	padding-bottom: 50px; }
+
+h1 { font-size: 45px; }
+h2 { margin-bottom: 10px; }
+hr {
+	width: 15%;
+	margin: 0;
+	color: #FFA000;
+	margin-bottom: 50px; }
+
+em {
+	color: #FFA000;
+	font-style: normal; }
+
+section h2 { border-bottom: 2px solid #FFA000;}
+
+.fas {
+	color: #FFA000;
+	margin-right: 5%; }
+
+li {
+	list-style-type: '\25CF';
+	color: #FFA000; }
+li:first-child { list-style-type: "\1F78A"; }
+
+article {
+	display: flex;
+	margin-left: 1em;
+	color: #000; }
+
+.date { width: 40%; }
+.details { flex: 1; }
+
+aside { display: flex;
+	flex-direction: column;
+	width: 33%;
+	background-color: #FFA000;
+	padding: 0px; }
+
+#photo { text-align: center; }
+img {  border-radius: 50%; }
+
+aside p {
+	margin-left: 30px;
+	margin-right: 20px;
+	text-align: justify; }
+
+h5 {
+	width: 100%;
+	background-color: #424242;
+	color: #FFA000;
+	text-align: center;
+	font-size: 1.5em; }
+
+#a_propos { flex: 1 0 auto; }
+
+#pied {
+	text-align: center;
+	margin-bottom: 20px; }
+
+.fab {
+	font-size: 3em;
+	text-align: center; }
+
+
+@media all and (max-width: 1280px)
+{
+	#FullDoc { flex-direction: column; }
+
+	aside {
+		flex-direction: row;
+		width: 100%; }
+
+	#photo, #Loisirs { display: none; }
+	#a_propos{flex: 1;}
+}
