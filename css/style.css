@@ -81,7 +81,10 @@ aside {
 }
 
 #photo {
+	margin: auto;
 	text-align: center;
+	max-width: 263px;
+	max-height: 267px;
 }
 img {
 	width: 85%;
