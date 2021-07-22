@@ -79,16 +79,41 @@ aside {
 	background-color: #FFA000;
 	padding: 0px;
 }
-
-#photo {
-	margin: auto;
-	text-align: center;
-	max-width: 263px;
-	max-height: 267px;
+.photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
 }
-img {
-	width: 85%;
+#bouton-photo {
+	min-width: 223px;
+	min-height: 226px;
+	border: none;
+	background: url(../Images/Tux-mini.png) center no-repeat;
+	background-size: cover;
 	border-radius: 50%;
+	cursor: pointer;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .5s;
+}
+.modal-content {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, .8);
+}
+
+#bouton-photo:focus + .modal {
+	visibility: visible;
+	opacity: 1;
 }
 
 aside p {
